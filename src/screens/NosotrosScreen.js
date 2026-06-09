@@ -33,5 +33,3 @@ const styles = StyleSheet.create({
   avatarPlaceholder: { width: 75, height: 75, backgroundColor: '#E0E0E0', justifyContent: 'center', alignItems: 'center', borderWidth: 1, borderColor: '#000' },
   avatarX: { fontSize: 24, fontWeight: 'bold', color: '#555' }
 });
-
-//ola

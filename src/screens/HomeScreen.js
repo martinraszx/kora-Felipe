@@ -87,3 +87,5 @@ const styles = StyleSheet.create({
   footer: { flexDirection: 'row', justifyContent: 'space-between', width: '100%' },
   footerLink: { color: COLORS.magenta, fontWeight: 'bold', fontSize: 14, borderWidth: 1, borderColor: COLORS.magenta, padding: 8, borderRadius: 5 }
 });
+
+//OLA
