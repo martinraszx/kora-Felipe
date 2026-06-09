@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, SafeAreaView } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, SafeAreaView, Image } from 'react-native';
 import { COLORS } from '../styles/theme';
 
 export default function HomeScreen({ navigation }) {
@@ -7,9 +7,12 @@ export default function HomeScreen({ navigation }) {
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
         
-        <View style={styles.logoBox}>
-          <Text style={styles.logoText}>Kora</Text>
-        </View>
+        {/* Aquí insertamos tu nuevo logo horizontal */}
+        <Image 
+          source={require('../../assets/logo-horizontal.png')} 
+          style={styles.logoImage} 
+          resizeMode="contain"
+        />
 
         <TouchableOpacity 
           style={styles.mainButton} 
@@ -25,8 +28,8 @@ export default function HomeScreen({ navigation }) {
             <Text style={styles.gridText}>Violentómetro y{"\n"}sus niveles</Text>
           </TouchableOpacity>
         </View>
-        </View>
-            <View style={styles.footer}>
+
+        <View style={styles.footer}>
           <TouchableOpacity onPress={() => navigation.navigate('Kora')}>
             <Text style={styles.footerLink}>Kora</Text>
           </TouchableOpacity>
@@ -34,6 +37,8 @@ export default function HomeScreen({ navigation }) {
             <Text style={styles.footerLink}>¿Quienes Somos?</Text>
           </TouchableOpacity>
         </View>
+
+      </View>
     </SafeAreaView>
   );
 }
@@ -41,8 +46,15 @@ export default function HomeScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: COLORS.blanco },
   content: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 20 },
-  logoBox: { borderTopWidth: 3, borderBottomWidth: 3, borderColor: COLORS.magenta, paddingHorizontal: 50, paddingVertical: 15, marginBottom: 50 },
-  logoText: { fontSize: 45, fontWeight: 'bold', color: COLORS.magenta },
+  
+  // Estilos del nuevo logo
+  logoImage: { 
+    width: 280, // Ancho suficiente para que se lea claro
+    height: 120, // Altura proporcional
+    marginBottom: 50 // Separación con el botón principal
+  },
+
+  // El resto de los estilos se mantienen intactos
   mainButton: { backgroundColor: COLORS.morado, width: '90%', padding: 25, borderRadius: 12, marginBottom: 30, shadowColor: COLORS.morado, shadowOpacity: 0.3, shadowRadius: 5 },
   mainButtonText: { color: COLORS.blanco, fontSize: 22, fontWeight: 'bold', textAlign: 'center' },
   grid: { flexDirection: 'row', justifyContent: 'space-between', width: '90%' },
