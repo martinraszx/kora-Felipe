@@ -18,9 +18,9 @@ export default function App() {
     <NavigationContainer>
       <Drawer.Navigator screenOptions={{
         headerTintColor: COLORS.magenta,
-        drawerStyle: { backgroundColor: COLORS.celeste, width: 240 },
-        drawerActiveTintColor: COLORS.morado,
-        drawerInactiveTintColor: COLORS.magenta,
+        drawerStyle: { backgroundColor: COLORS.berenjena, width: 240 },
+        drawerActiveTintColor: COLORS.blanco,
+        drawerInactiveTintColor: COLORS.rosa_viejo,
       }}>
         <Drawer.Screen name="Inicio" component={HomeScreen} options={{ title: 'Principal' }} />
         <Drawer.Screen name="Resultados" component={ResultadosScreen} />

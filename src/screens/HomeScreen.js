@@ -78,14 +78,14 @@ const styles = StyleSheet.create({
   },
 
   mainButton: { backgroundColor: COLORS.morado, width: '100%', padding: 25, borderRadius: 12, marginBottom: 20, shadowColor: COLORS.morado, shadowOpacity: 0.3, shadowRadius: 5 },
-  mainButtonText: { color: COLORS.blanco, fontSize: 22, fontWeight: 'bold', textAlign: 'center' },
+  mainButtonText: { color: COLORS.blanco, fontSize: 25, fontWeight: 'bold', textAlign: 'center' },
   
   grid: { flexDirection: 'row', justifyContent: 'space-between', width: '100%' },
   gridButton: { backgroundColor: COLORS.verdeMenta, width: '48%', padding: 20, borderRadius: 8, borderBottomWidth: 4, borderBottomColor: COLORS.verdeBrillante },
-  gridText: { color: COLORS.magenta, fontWeight: 'bold', textAlign: 'center', fontSize: 13 },
+  gridText: { color: COLORS.blanco, fontWeight: 'bold', textAlign: 'center', fontSize: 15 },
   
   footer: { flexDirection: 'row', justifyContent: 'space-between', width: '100%' },
-  footerLink: { color: COLORS.magenta, fontWeight: 'bold', fontSize: 14, borderWidth: 1, borderColor: COLORS.magenta, padding: 8, borderRadius: 5 }
+  footerLink: { color: COLORS.magenta, fontWeight: 'bold', fontSize: 15, borderWidth: 1, borderColor: COLORS.magenta, padding: 8, borderRadius: 5 }
 });
 
 //OLA
